@@ -1,0 +1,11 @@
+ami = "ami-0a8b4cd432b1c3063"
+instance_type = "t2.micro"
+instance_name = "EFS_LAB"
+subnet = "subnet-00bd8e3ef8461ed2d"
+key = "efs-lab-key"
+security_groups = ["sg-02ff1972721634a23"]
+enable_efs = true
+fs_name = "EFS_AWS_LAB"
+fs_perf_mode = "generalPurpose"
+mount_dir = "/home/efs_aws_lab"
+region = "us-east-1"
