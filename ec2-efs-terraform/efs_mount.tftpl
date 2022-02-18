@@ -1,0 +1,6 @@
+#!/bin/bash
+sleep 3m
+yum install -y amazon-efs-utils
+mkdir -p ${mount_dir}
+mount -t efs ${efs_dns}:/ ${mount_dir}
+echo ${efs_dns}:/ ${mount_dir} efs defaults,_netdev 0 0 >> /etc/fstab
